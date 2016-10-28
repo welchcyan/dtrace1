@@ -23,10 +23,6 @@ public class DtraceApplication {
 		SpringApplication.run(DtraceApplication.class, args);
 	}
 
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
 
 	@RequestMapping("/")
 	public String home() {
